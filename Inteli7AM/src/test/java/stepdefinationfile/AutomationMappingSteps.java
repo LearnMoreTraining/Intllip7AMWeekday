@@ -19,10 +19,6 @@ public class AutomationMappingSteps {
  @When("User enter the username {string} and password {string}")
 public void enterUsernamePassword(String userName , String password){
 
-// driver.findElement(By.id("username")).sendKeys(userName);
-// driver.findElement(By.name("pw")).sendKeys(password);
-// //driver.findElement(By.name("pw")).sendKeys("Madurai" + Keys.ENTER);
-
   driver.findElement(By.cssSelector("input[id='username']")).sendKeys(userName);
   driver.findElement(By.cssSelector("#password")).sendKeys(password);
 
